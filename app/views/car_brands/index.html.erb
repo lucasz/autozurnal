@@ -1,4 +1,4 @@
-<h1>Znacky aut</h1>
+<h1>Značky</h1>
 <% @car_brands.each do |cb| %>
 	<p><%= cb.name %></p><span><%= link_to 'upravit', edit_car_brand_path(cb) %></span> | <span><%= link_to 'delete', car_brand_path(cb), method: 'delete', data: {confirm: 'ste si isty?'} %></span><hr/>
 <% end %>
