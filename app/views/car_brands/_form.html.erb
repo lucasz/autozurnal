@@ -1,6 +1,13 @@
 <%= form_for @car_brand do |f| %>
+	<p>
 	<%= f.label :name %>
 	<%= f.text_field :name %>
-
+	</p>
+	<p>
+	<%= f.label :logo %>
+	<%= f.file_field :logo %>
+	</p>
+	<p>
 	<%= f.submit 'Uložiť' %>
+	</p>
 <% end %>
